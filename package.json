@@ -1,0 +1,20 @@
+{
+  "name": "alphabetCalculator",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "type": "commonjs",
+  "repository": "git@github.com:shawakash/alphaFreq.git",
+  "author": "Akash Shaw <shawakash2003@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "esbuild ./src/index.js --bundle --platform=node --outfile=dist/index.js",
+    "dev": "node dist/index.js --trace-warning"
+  },
+  "dependencies": {
+    "esbuild": "^0.20.0"
+  },
+  "devDependencies": {
+    "pdf-parse": "^1.1.1"
+  }
+}
